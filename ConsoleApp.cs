@@ -299,7 +299,7 @@ namespace Assignment1
                 }
                 if (int.TryParse(userInput, out int number))
                 {
-                    gotitem = shop.GetItemFromCart(number);
+                    gotitem = shop.GetItemInventory(number);
                     if (gotitem != null)
                     {
                         AddItemToCart(gotitem);
